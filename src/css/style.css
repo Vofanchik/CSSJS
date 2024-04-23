@@ -1,0 +1,59 @@
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.widget_collapsible,
+.widget_chat {
+  width: 30%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 3px solid #696969;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #d3d3d3;
+}
+
+.widget_controls {
+  margin-bottom: 0.5rem;
+}
+
+.widget_button {
+  padding: 1rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #2424fc;
+  color: white;
+  font-weight: bold;
+}
+.widget_button:hover {
+  cursor: pointer;
+  background-color: #264bba;
+}
+
+.widget_button:focus {
+  border: 2px solid #0000cd;
+}
+
+.widget_footer {
+  overflow: hidden;
+}
+
+.widget_footer_string {
+  padding: 1rem;
+  line-height: 2rem;
+  border: 1px solid #000000;
+}
+
+.show {
+  opacity: 1;
+  max-height: 30vh;
+  transition: opacity 0.25s 0.25s, max-height 0.5s steps(5, end);
+}
+
+.collapsed {
+  opacity: 0;
+  max-height: 0px;
+  transition: opacity 0.25s 0.25s, max-height 0.5s steps(5, end);
+}
